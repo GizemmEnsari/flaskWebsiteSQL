@@ -1,0 +1,41 @@
+{% extends "base.html"%}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login </title>
+</head>
+
+<body >
+
+<h1 style="color:red;text-align:center" > Welcome to Code with Gizem Program!</h1>
+
+<br>
+<p style="color:red"> This website is designed for beginner coders to be able to easily understand how coding
+works, and to be able code without confusion while having fun!</p>
+<br>
+
+
+<form action="/checkCredentials" method="post" >
+    <input style="background-color:red" type="text" placeholder="username" name="username" />
+    <br>
+    <input style="background-color:red" type="text" placeholder="password" name="password" />
+    <br>
+    <br>
+<button style="background-color:red" type="submit" id="login" formaction="/checkCredentials" >login
+</button>
+
+
+    <button style="background-color:red" type="submit" id="createAccount" formaction="/createUser"> sign up
+    </button>
+<br>
+</form>
+<p style="color:red">
+   {{note}}
+{{message}}
+</p>
+
+</body>
+</html>
+{% endblock %}

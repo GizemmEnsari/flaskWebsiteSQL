@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ username }}'s Homepage</title>
+
+</head>
+<body>
+<form action="/logout" method="post" >
+    <button style="background-color:rgb(255,0,0);" type="submit"> log out
+    </button>
+</form>
+<form action="/myProfile" method="post">
+ <button style="background-color:rgb(255,0,0);" type="submit" >my profile </button>
+</form>
+
+<h3 style="color:rgb(255,0,0);"> {{note}} </h3>
+<button style="background-color:rgb(255,0,0);" type="submit" >my profile </button>
+<br>
+<br>
+<textarea style="background-color:rgb(255,0,0)" name="submit" id="enterCode" rows="27" cols="66" placeholder="Enter code here" >
+
+</textarea>
+
+<br>
+</body>
+</html>
+{% endblock %}
