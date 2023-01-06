@@ -17,13 +17,30 @@
  <button style="background-color:rgb(255,0,0);" type="submit" >my profile </button>
 </form>
 
-<h3 style="color:rgb(255,0,0);"> {{note}} </h3>
-<button style="background-color:rgb(255,0,0);" type="submit" >my profile </button>
-<br>
-<br>
-<textarea style="background-color:rgb(255,0,0)" name="submit" id="enterCode" rows="27" cols="66" placeholder="Enter code here" >
+<form action="/mySpace1" method = 'post'>
+    <button style="background-color:rgb(255,0,0);" type="submit"> my space 1 </button>
+</form>
 
+<form action="/mySpace2" method = 'post'>
+    <button style="background-color:rgb(255,0,0);" type="submit"> my space 2 </button>
+</form>
+
+<form action="/mySpace3" method = 'post'>
+    <button style="background-color:rgb(255,0,0);" type="submit"> my space 3 </button>
+</form>
+
+<!--<h3 style="color:rgb(255,0,0);"> account created as {{username}} </h3>-->
+<h3 style="color:rgb(255,0,0);"> {{note}}</h3>
+<!--<button style="background-color:rgb(255,0,0);" type="submit" >my profile </button>-->
+<br>
+<br>
+<textarea name="enterCode" style="background-color:rgb(255,0,0)"  id="enterCode1" rows="27" cols="66" placeholder="Enter code here" >
 </textarea>
+
+<form action="/runCode" method="post">
+    <button style="background-color:rgb(255,0,0);" type="submit"> run the code </button>
+</form>
+<pre> {{print_output}} </pre>
 
 <br>
 </body>
